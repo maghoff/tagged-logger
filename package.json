@@ -1,0 +1,16 @@
+{
+  "name": "tagged-logger",
+  "version": "1.0.0",
+  "description": "A logger frontend for Winston that attaches tags to the messages",
+  "main": "index.js",
+  "repository": {
+    "type": "hg",
+    "url": "https://bitbucket.org/maghoff/tagged-logger"
+  },
+  "bugs": {
+    "url": "https://bitbucket.org/maghoff/tagged-logger/issues"
+  },
+  "author": "Magnus Hoff <maghoff@gmail.com>",
+  "license": "BSD",
+  "dependencies": {}
+}
