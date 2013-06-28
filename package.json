@@ -1,6 +1,6 @@
 {
   "name": "tagged-logger",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A logger frontend for Winston that attaches tags to the messages",
   "main": "index.js",
   "repository": {
@@ -14,6 +14,6 @@
   "license": "BSD",
   "dependencies": {},
   "peerDependencies": {
-    "winston": "0.6.x 0.7.x"
+    "winston": ">=0.6.0 <1.0.0"
   }
 }
