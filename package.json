@@ -12,5 +12,8 @@
   },
   "author": "Magnus Hoff <maghoff@gmail.com>",
   "license": "BSD",
-  "dependencies": {}
+  "dependencies": {},
+  "peerDependencies": {
+    "winston": "~0.6.2"
+  }
 }
