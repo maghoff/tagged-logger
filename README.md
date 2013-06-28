@@ -64,9 +64,7 @@ If you are comfortable with [Winston][winston], reading [the tiny source](https:
 
 `winstonLogger` is a logger from the [Winston][winston] library, and all messages logged to this `TaggedLogger` will be passed to this underlying `winstonLogger`. Winston attempts to be unopiniated about the format of these messages. `TaggedLogger` attempts to be opinionated and give all the messages tags and a timestamp.
 
-The logger can alternatively be instantiated with tags–`TaggedLogger(winstonLogger, ['tagA', 'tagB'])`–but these are normally added by calling [`createSublogger`](#createSublogger) on an existing logger.
-
-<div id="log"></div>
+The logger can alternatively be instantiated with tags–`TaggedLogger(winstonLogger, ['tagA', 'tagB'])`–but these are normally added by calling `createSublogger` on an existing logger.
 
 ### `logger.log(level, message)` ###
 Logs `message` to the underlying logger at [log-level](https://github.com/flatiron/winston#logging-levels) `level`.
@@ -77,15 +75,13 @@ The log message gets two properties set in its [metadata](https://github.com/fla
  * `tags`: A list of all the tags the `logger` object has
 
 ### `logger.info(message)` ###
-This maps directly to [`logger.log('info', message)`](#log) and is included for convenience.
+This maps directly to `logger.log('info', message)` and is included for convenience.
 
 ### `logger.warn(message)` ###
-This maps directly to [`logger.log('warn', message)`](#log) and is included for convenience.
+This maps directly to `logger.log('warn', message)` and is included for convenience.
 
 ### `logger.error(message)` ###
-This maps directly to [`logger.log('error', message)`](#log) and is included for convenience.
-
-<div id="createSublogger"></div>
+This maps directly to `logger.log('error', message)` and is included for convenience.
 
 ### `logger.createSublogger(tag)` ###
 Instantiates a new logger object with the same underlying logger and tags as `logger`, plus the additional tag `tag`. Use it when entering a new significant scope, for example in a module of your application (static scope) or on each request in an http server (dynamic scope).
