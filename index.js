@@ -1,6 +1,8 @@
-function TaggedLogger(target, tags) {
+var TaggedLogger = function (target, tags) {
+	if (!(this instanceof TaggedLogger)) return new TaggedLogger(target, tags);
+
 	this.target = target;
-	this.tags = tags;
+	this.tags = tags || [];
 }
 
 TaggedLogger.prototype.log = function (level, msg) {
