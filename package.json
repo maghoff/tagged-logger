@@ -1,6 +1,6 @@
 {
   "name": "tagged-logger",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A logger frontend for Winston that attaches tags to the messages",
   "main": "index.js",
   "repository": {
