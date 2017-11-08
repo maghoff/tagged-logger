@@ -14,6 +14,6 @@
   "license": "BSD",
   "dependencies": {},
   "peerDependencies": {
-    "winston": ">= 0.6.0 < 1.0.0"
+    "winston": ">= 0.6.0"
   }
 }
